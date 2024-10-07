@@ -39,6 +39,6 @@ public class OraclePooledRecoveryIT extends PooledRecoveryIT {
 
     @Container
     @ServiceConnection
-    static JdbcDatabaseContainer<?> oracle = new OracleContainer("gvenzl/oracle-free:slim-faststart")
+    static JdbcDatabaseContainer<?> oracle = new OracleContainer("gvenzl/oracle-free:18.4.0-slim-faststart")
             .withCopyFileToContainer(MountableFile.forClasspathResource("oracle-initscript.sql"), "/container-entrypoint-initdb.d/init.sql");
 }
