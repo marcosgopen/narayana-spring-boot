@@ -22,9 +22,9 @@ import org.junit.jupiter.api.Tag;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.testcontainers.service.connection.ServiceConnection;
 import org.testcontainers.containers.JdbcDatabaseContainer;
+import org.testcontainers.containers.OracleContainer;
 import org.testcontainers.junit.jupiter.Container;
 import org.testcontainers.junit.jupiter.Testcontainers;
-import org.testcontainers.oracle.OracleContainer;
 import org.testcontainers.utility.MountableFile;
 
 @Tag("testcontainers")
