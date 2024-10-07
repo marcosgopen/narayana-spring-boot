@@ -17,7 +17,6 @@
 package dev.snowdrop.boot.narayana.testcontainers;
 
 import dev.snowdrop.boot.narayana.generic.GenericRecoveryIT;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Tag;
 import org.springframework.boot.testcontainers.service.connection.ServiceConnection;
 import org.testcontainers.containers.JdbcDatabaseContainer;
@@ -26,7 +25,6 @@ import org.testcontainers.junit.jupiter.Testcontainers;
 import org.testcontainers.oracle.OracleContainer;
 import org.testcontainers.utility.MountableFile;
 
-@Disabled
 @Tag("testcontainers")
 @Testcontainers
 public class OracleGenericRecoveryIT extends GenericRecoveryIT {
