@@ -31,6 +31,6 @@ public class OracleGenericRecoveryIT extends GenericRecoveryIT {
 
     @Container
     @ServiceConnection
-    static JdbcDatabaseContainer<?> oracle = new OracleContainer("doctorkirk/oracle-19c:latest")
+    static JdbcDatabaseContainer<?> oracle = new OracleContainer("gvenzl/oracle-xe:18.4.0-slim-faststart")
             .withCopyFileToContainer(MountableFile.forClasspathResource("oracle-initscript.sql"), "/container-entrypoint-initdb.d/init.sql");
 }
